@@ -268,7 +268,7 @@ export default function Contact() {
                 <Mail size={18} className="info-icon" />
                 <div>
                   <h4>Human Resources Division</h4>
-                  <p><a href="mailto:hrd@obayashiindia.com" className="hover:text-[var(--primary-red)] font-semibold transition-colors">hrd@obayashiindia.com</a></p>
+                  <p><a href="mailto:hrd@obic.co.in" className="hover:text-[var(--primary-red)] font-semibold transition-colors">hrd@obic.co.in</a></p>
                   <span className="text-[12px] text-gray-500">General HR queries and employee relations</span>
                 </div>
               </div>
@@ -277,7 +277,7 @@ export default function Contact() {
                 <Mail size={18} className="info-icon" />
                 <div>
                   <h4>Legal & Compliance Affairs</h4>
-                  <p><a href="mailto:legal@obayashiindia.com" className="hover:text-[var(--primary-red)] font-semibold transition-colors">legal@obayashiindia.com</a></p>
+                  <p><a href="mailto:legal@obic.co.in" className="hover:text-[var(--primary-red)] font-semibold transition-colors">legal@obic.co.in</a></p>
                   <span className="text-[12px] text-gray-500">Contractual, regulatory & compliance notices</span>
                 </div>
               </div>
@@ -286,7 +286,7 @@ export default function Contact() {
                 <Mail size={18} className="info-icon" />
                 <div>
                   <h4>Careers & Recruitment Desk</h4>
-                  <p><a href="mailto:recruitment@obayashiindia.com" className="hover:text-[var(--primary-red)] font-semibold transition-colors">recruitment@obayashiindia.com</a></p>
+                  <p><a href="mailto:recruitment@obic.co.in" className="hover:text-[var(--primary-red)] font-semibold transition-colors">recruitment@obic.co.in</a></p>
                   <span className="text-[12px] text-gray-500">Job applications and career opportunities</span>
                 </div>
               </div>
@@ -295,7 +295,7 @@ export default function Contact() {
                 <Mail size={18} className="info-icon" />
                 <div>
                   <h4>Talent Acquisition Team</h4>
-                  <p><a href="mailto:talent@obayashiindia.com" className="hover:text-[var(--primary-red)] font-semibold transition-colors">talent@obayashiindia.com</a></p>
+                  <p><a href="mailto:talent@obic.co.in" className="hover:text-[var(--primary-red)] font-semibold transition-colors">talent@obic.co.in</a></p>
                   <span className="text-[12px] text-gray-500">Specialized executive & engineering hiring</span>
                 </div>
               </div>
@@ -304,7 +304,7 @@ export default function Contact() {
                 <Mail size={18} className="info-icon" />
                 <div>
                   <h4>Employee Onboarding Services</h4>
-                  <p><a href="mailto:onboard@obayashiindia.com" className="hover:text-[var(--primary-red)] font-semibold transition-colors">onboard@obayashiindia.com</a></p>
+                  <p><a href="mailto:onboard@obic.co.in" className="hover:text-[var(--primary-red)] font-semibold transition-colors">onboard@obic.co.in</a></p>
                   <span className="text-[12px] text-gray-500">New hire documentations and orientation</span>
                 </div>
               </div>
@@ -421,7 +421,7 @@ export default function Contact() {
                 <h4>Security & Governance Notice</h4>
               </div>
               <p className="security-card-text">
-                Verify any email source carefully. Official correspondence from Obayashi Corporation in India originates solely from verified <strong>@obayashiindia.com</strong> domains. Obayashi Corporation does not issue transactional funds requests or recruitment fees through unverified external email platforms. Report any suspicious correspondences impersonating Obayashi management.
+                Verify any email source carefully. Official correspondence from Obayashi Corporation in India originates solely from verified <strong>@obic.co.in</strong> domains. Obayashi Corporation does not issue transactional funds requests or recruitment fees through unverified external email platforms. Report any suspicious correspondences impersonating Obayashi management.
               </p>
             </div>
           </div>
