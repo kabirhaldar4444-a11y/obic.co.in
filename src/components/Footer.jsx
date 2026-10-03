@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronUp, MapPin, Phone, Mail, ExternalLink } from 'lucide-react';
+import { ChevronUp, MapPin, Phone, Mail } from 'lucide-react';
 
 export default function Footer() {
   const scrollToTop = () => {
@@ -108,7 +108,7 @@ export default function Footer() {
             </ul>
             <div className="footer-col-contact mt-3 pt-3 border-t border-white/10">
               <span className="text-[11px] font-bold text-white/50 uppercase tracking-wider block mb-1.5">Direct Contact</span>
-              <ul className="footer-link-list text-xs text-[#a0a0a0] space-y-1 mb-3">
+              <ul className="footer-link-list text-xs text-[#a0a0a0] space-y-1">
                 <li className="flex items-center gap-1.5">
                   <Phone size={11} className="text-[var(--primary-red)] shrink-0" />
                   <a href="tel:02241504282" className="footer-link">022-41504282</a> / <a href="tel:02241504283" className="footer-link">41504283</a>
@@ -118,28 +118,6 @@ export default function Footer() {
                   <a href="mailto:hrd@obic.co.in" className="footer-link">hrd@obic.co.in</a>
                 </li>
               </ul>
-
-              <div className="mt-5 pt-4 border-t border-white/10">
-                <span className="text-[11px] font-bold text-white/50 uppercase tracking-wider block mb-2.5">Connect With Us</span>
-                <Link
-                  to="/"
-                  onClick={scrollToTop}
-                  className="footer-linkedin-card"
-                  title="Obayashi Corporation"
-                  aria-label="Obayashi Corporation - Go to Home Page"
-                >
-                  <div className="footer-linkedin-icon-wrapper">
-                    <svg className="footer-linkedin-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                    </svg>
-                  </div>
-                  <div className="footer-linkedin-info">
-                    <span className="footer-linkedin-title">Obayashi Corporation</span>
-                    <span className="footer-linkedin-subtitle">Official LinkedIn Page</span>
-                  </div>
-                  <ExternalLink size={13} className="footer-linkedin-arrow opacity-60" />
-                </Link>
-              </div>
             </div>
           </div>
         </div>
@@ -151,21 +129,6 @@ export default function Footer() {
             <li><Link to="/terms-of-use" className="footer-util-link">Terms of Use</Link></li>
             <li><Link to="/social-media-policy" className="footer-util-link">Social Media Policy</Link></li>
             <li><Link to="/accessibility" className="footer-util-link">Web Accessibility</Link></li>
-            <li>
-              <Link
-                to="/"
-                onClick={scrollToTop}
-                className="footer-util-link inline-flex items-center gap-1.5 hover:text-[#0a66c2]"
-                title="LinkedIn"
-                aria-label="LinkedIn - Go to Home Page"
-              >
-                <svg className="w-3 h-3 fill-current" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                </svg>
-                <span>LinkedIn</span>
-                <ExternalLink size={10} className="opacity-60" />
-              </Link>
-            </li>
           </ul>
           <p className="footer-copyright">
             Copyright &copy; {new Date().getFullYear()}, OBAYASHI CORPORATION. All rights reserved.

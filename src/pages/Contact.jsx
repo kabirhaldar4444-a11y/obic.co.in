@@ -295,7 +295,7 @@ export default function Contact() {
                 <Mail size={18} className="info-icon" />
                 <div>
                   <h4>Talent Acquisition Team</h4>
-                  <p><a href="mailto:talent@obic.co.in" className="hover:text-[var(--primary-red)] font-semibold transition-colors">talent@obic.co.in</a></p>
+                  <p><a href="mailto:talentacquisition@obic.co.in" className="hover:text-[var(--primary-red)] font-semibold transition-colors">talentacquisition@obic.co.in</a></p>
                   <span className="text-[12px] text-gray-500">Specialized executive & engineering hiring</span>
                 </div>
               </div>
