@@ -505,7 +505,7 @@ export const governmentPartnershipData = {
   company: "Obayashi India Corporation Pvt. Ltd.",
   companyOffice: "The Ruby, 9th Floor, 29 Senapati Bapat Marg, Dadar West, Mumbai 400028",
   duration: "25 Years Exclusive Mandate (2025 – 2050)",
-  status: "Duly Stamped & Executed by MoHUA & Obayashi India",
+  status: "Duly Stamped, Signed & Executed by MoHUA & Obayashi India",
   pages: [
     {
       pageNumber: 1,
@@ -523,10 +523,10 @@ export const governmentPartnershipData = {
     },
     {
       pageNumber: 3,
-      name: "Page 3: Articles 7 to 8 & Official Execution Seals",
-      subtitle: "Dispute Resolution, Jurisdiction & Authenticated Stamped Seals",
+      name: "Page 3: Articles 7 to 8 & Official Stamped & Signed Seals",
+      subtitle: "Dispute Resolution, Jurisdiction & Authenticated Stamped & Signed Execution",
       image: "/images/partnership/agreement-page-3.png",
-      summary: "Details Article 7 (Arbitration), Article 8 (Governing Law of India, New Delhi Jurisdiction), concluding with official signatures and the authenticated MoHUA and Obayashi corporate stamped seals."
+      summary: "Details Article 7 (Arbitration), Article 8 (Governing Law of India, New Delhi Jurisdiction), concluding with official executive signatures and the authenticated MoHUA and Obayashi corporate stamped seals."
     }
   ],
   keyArticles: [

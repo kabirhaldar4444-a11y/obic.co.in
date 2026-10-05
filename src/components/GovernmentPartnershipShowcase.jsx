@@ -373,7 +373,7 @@ export default function GovernmentPartnershipShowcase() {
               <div className="gov-modal-footer">
                 <div className="gov-modal-footer-left">
                   <ShieldCheck size={16} className="text-blue" />
-                  <span>Verified MoHUA & Obayashi Corporate Stamped Seal • Protected Institutional Record (Download Disabled)</span>
+                  <span>Verified MoHUA & Obayashi Corporate Stamped & Signed Execution • Protected Institutional Record (Download Disabled)</span>
                 </div>
                 <div className="gov-modal-footer-right">
                   <span>Use <strong>Left / Right Arrow</strong> to switch pages • <strong>Esc</strong> to close</span>
