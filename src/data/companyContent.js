@@ -495,5 +495,64 @@ export const executiveLeadershipTeam = [
   }
 ];
 
+export const governmentPartnershipData = {
+  title: "Government & Institutional Partnership in India",
+  subtitle: "Official bilateral agreement executed between the Ministry of Housing and Urban Affairs (MoHUA), Government of India and Obayashi India Corporation Pvt. Ltd.",
+  docRef: "0-22013/10/2025 OBY-P-V",
+  date: "24th October, 2025",
+  ministry: "Ministry of Housing and Urban Affairs (MoHUA), Government of India",
+  ministryOffice: "Nirman Bhawan, New Delhi, India",
+  company: "Obayashi India Corporation Pvt. Ltd.",
+  companyOffice: "The Ruby, 9th Floor, 29 Senapati Bapat Marg, Dadar West, Mumbai 400028",
+  duration: "25 Years Exclusive Mandate (2025 – 2050)",
+  status: "Duly Stamped & Executed by MoHUA & Obayashi India",
+  pages: [
+    {
+      pageNumber: 1,
+      name: "Page 1: Memorandum of Agreement & Recitals",
+      subtitle: "Preamble, Corporate Incorporation & Strategic Intent",
+      image: "/images/partnership/agreement-page-1.png",
+      summary: "Establishes the bilateral covenant between MoHUA and Obayashi India Corporation Pvt. Ltd., recognizing Obayashi's engineering capabilities and granting nationwide partnership rights."
+    },
+    {
+      pageNumber: 2,
+      name: "Page 2: Articles 1 to 6 (Exclusive Rights & Scope)",
+      subtitle: "Grant of Exclusive Rights, 25-Year Duration, Scope & Performance",
+      image: "/images/partnership/agreement-page-2.png",
+      summary: "Outlines Article 1 (Grant of Exclusive Rights for 25 years), Article 2 (Scope including smart cities, affordable housing, transit), Article 3 (Quality & Safety standards), and Articles 4–6."
+    },
+    {
+      pageNumber: 3,
+      name: "Page 3: Articles 7 to 8 & Official Execution Seals",
+      subtitle: "Dispute Resolution, Jurisdiction & Authenticated Stamped Seals",
+      image: "/images/partnership/agreement-page-3.png",
+      summary: "Details Article 7 (Arbitration), Article 8 (Governing Law of India, New Delhi Jurisdiction), concluding with official signatures and the authenticated MoHUA and Obayashi corporate stamped seals."
+    }
+  ],
+  keyArticles: [
+    {
+      num: "Article 1",
+      title: "Grant of 25-Year Exclusive Rights",
+      details: "MoHUA grants Obayashi India Corporation Group the sole and exclusive right to bid, undertake, and execute forthcoming housing, smart cities, and allied public infrastructure across the Republic of India for 25 years."
+    },
+    {
+      num: "Article 2",
+      title: "Comprehensive Scope of Projects",
+      details: "Encompasses affordable housing developments, smart city infrastructure, urban renewal, high-efficiency transit utilities, and environmental remediation programs under the jurisdiction of MoHUA."
+    },
+    {
+      num: "Article 3",
+      title: "World-Class Quality & Safety Standards",
+      details: "Mandates execution at the highest international standards of quality, seismic engineering, and zero-accident occupational safety (ISO 45001 & ISO 9001)."
+    },
+    {
+      num: "Articles 7-8",
+      title: "Legal Jurisdiction & Official Seals",
+      details: "Governed exclusively under Indian Law with jurisdiction at New Delhi courts, signed and verified under official Ministry and Obayashi Corporate seals."
+    }
+  ]
+};
+
+
 
 

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { 
@@ -10,31 +10,17 @@ import {
   Lock,
   Globe2,
   Trophy,
-  Filter,
   CheckCircle2
 } from 'lucide-react';
 import CertificatesShowcase from '../components/CertificatesShowcase';
+import GovernmentPartnershipShowcase from '../components/GovernmentPartnershipShowcase';
 import CompanySubNav from '../components/CompanySubNav';
 import { awards, certificates } from '../data/companyContent';
 
 export default function Certificates() {
-  const [activeCategory, setActiveCategory] = useState('All');
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  const categories = [
-    'All',
-    'Safety & Health',
-    'Quality Management',
-    'Information Security',
-    'Construction Capability'
-  ];
-
-  const filteredCertificates = activeCategory === 'All'
-    ? certificates
-    : certificates.filter(cert => cert.category === activeCategory);
 
   return (
     <div className="certificates-page fade-in">
@@ -121,34 +107,21 @@ export default function Certificates() {
         </div>
       </div>
 
-      {/* Filter Category Tabs */}
-      <section className="section-padding" style={{ paddingTop: '50px', paddingBottom: '10px' }}>
-        <div className="container">
-          <div className="cert-category-filter-bar">
-            <span className="filter-title"><Filter size={15} /> Filter Certificates:</span>
-            <div className="filter-tabs-wrapper">
-              {categories.map((cat) => (
-                <button
-                  key={cat}
-                  onClick={() => setActiveCategory(cat)}
-                  className={`cert-category-tab ${activeCategory === cat ? 'active' : ''}`}
-                >
-                  {cat}
-                </button>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Main Certificates Interactive Loop Showcase Section */}
-      <section className="section-padding" style={{ paddingTop: '20px' }}>
+      <section className="section-padding" style={{ paddingTop: '50px', paddingBottom: '30px' }}>
         <div className="container">
           <CertificatesShowcase 
             showHeader={true}
             title="AUTHENTICATED CORPORATE CERTIFICATIONS"
-            subtitle={`Explore our ${filteredCertificates.length} verified management certifications in interactive loop mode and full resolution inspection.`}
+            subtitle={`Explore our ${certificates.length} verified management certifications in interactive loop mode and full resolution inspection.`}
           />
+        </div>
+      </section>
+
+      {/* Government & Institutional Partnership in India */}
+      <section className="section-padding" style={{ paddingTop: '20px', paddingBottom: '50px' }}>
+        <div className="container">
+          <GovernmentPartnershipShowcase />
         </div>
       </section>
 
