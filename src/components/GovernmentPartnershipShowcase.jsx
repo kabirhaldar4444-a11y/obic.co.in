@@ -10,7 +10,8 @@ import {
   RotateCcw, 
   X, 
   ShieldCheck, 
-  FileText 
+  FileText,
+  ExternalLink 
 } from 'lucide-react';
 import { governmentPartnershipData } from '../data/companyContent';
 
@@ -19,7 +20,7 @@ export default function GovernmentPartnershipShowcase() {
   const [modalOpen, setModalOpen] = useState(false);
   const [zoomLevel, setZoomLevel] = useState(1);
 
-  const { pages, docRef } = governmentPartnershipData;
+  const { pages, docRef, fileName, pdfUrl } = governmentPartnershipData;
   const activePage = pages[currentPageIndex];
 
   const handlePrev = (e) => {
@@ -76,11 +77,25 @@ export default function GovernmentPartnershipShowcase() {
               <FileText size={14} />
               <span>Page {activePage.pageNumber} of {pages.length}</span>
             </span>
+            <span className="gov-file-tag-pill">
+              {fileName || "obayashi-agreement.pdf"}
+            </span>
             <h3 className="gov-current-page-title">{activePage.name}</h3>
           </div>
 
-          {/* Viewer Controls (Strictly No Download Option) */}
+          {/* Viewer Controls */}
           <div className="gov-viewer-controls">
+            <a 
+              href={pdfUrl || "/obayashi-agreement.pdf"} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="gov-tool-btn gov-pdf-link-btn" 
+              title="Open full obayashi-agreement.pdf document"
+            >
+              <FileText size={14} />
+              <span>{fileName || "obayashi-agreement.pdf"}</span>
+              <ExternalLink size={13} />
+            </a>
             <button 
               onClick={() => setZoomLevel(prev => Math.min(prev + 0.25, 2.0))} 
               className="gov-tool-btn" 
@@ -275,6 +290,10 @@ export default function GovernmentPartnershipShowcase() {
                 <div className="gov-modal-info">
                   <div className="gov-modal-title-row">
                     <span className="gov-modal-badge">{docRef}</span>
+                    <span className="gov-modal-doc-pill">
+                      <FileText size={13} />
+                      <span>{fileName || "obayashi-agreement.pdf"}</span>
+                    </span>
                     <h3 className="gov-modal-title">Government & Institutional Partnership in India</h3>
                     <span className="gov-modal-page-tag">Page {activePage.pageNumber} of {pages.length}</span>
                   </div>
@@ -284,6 +303,18 @@ export default function GovernmentPartnershipShowcase() {
                 </div>
 
                 <div className="gov-modal-actions">
+                  <a 
+                    href={pdfUrl || "/obayashi-agreement.pdf"} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="gov-modal-btn gov-modal-pdf-btn" 
+                    title="Open original obayashi-agreement.pdf document"
+                  >
+                    <FileText size={16} />
+                    <span>Open PDF</span>
+                    <ExternalLink size={13} />
+                  </a>
+
                   <div className="gov-modal-nav-group">
                     <button 
                       onClick={handlePrev} 

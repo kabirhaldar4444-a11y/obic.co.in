@@ -498,7 +498,9 @@ export const executiveLeadershipTeam = [
 export const governmentPartnershipData = {
   title: "Government & Institutional Partnership in India",
   subtitle: "Official bilateral agreement executed between the Ministry of Housing and Urban Affairs (MoHUA), Government of India and Obayashi India Corporation Pvt. Ltd.",
-  docRef: "0-22013/10/2025 OBY-P-V",
+  fileName: "obayashi-agreement.pdf",
+  pdfUrl: "/obayashi-agreement.pdf",
+  docRef: "0-22013/10/2025 OBY-PVT",
   date: "24th October, 2025",
   ministry: "Ministry of Housing and Urban Affairs (MoHUA), Government of India",
   ministryOffice: "Nirman Bhawan, New Delhi, India",
