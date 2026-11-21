@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Send, CheckCircle2, ShieldCheck, Mail, Building2, Phone, AlertCircle } from 'lucide-react';
 
 export default function Contact() {
@@ -14,6 +14,16 @@ export default function Contact() {
 
   const [errors, setErrors] = useState({});
   const [isSubmitted, setIsSubmitted] = useState(false);
+
+  useEffect(() => {
+    if (window.location.hash) {
+      const id = window.location.hash.replace('#', '');
+      const el = document.getElementById(id);
+      if (el) {
+        setTimeout(() => el.scrollIntoView({ behavior: 'smooth' }), 120);
+      }
+    }
+  }, []);
 
   const validate = () => {
     const tempErrors = {};
@@ -415,7 +425,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="contact-security-card">
+            <div className="contact-security-card" id="security-governance-notice">
               <div className="security-card-header">
                 <ShieldCheck size={20} className="text-red" />
                 <h4>Security & Governance Notice</h4>
@@ -423,6 +433,11 @@ export default function Contact() {
               <p className="security-card-text">
                 Verify any email source carefully. Official correspondence from Obayashi Corporation in India originates solely from verified <strong>@obic.co.in</strong> domains. Obayashi Corporation does not issue transactional funds requests or recruitment fees through unverified external email platforms. Report any suspicious correspondences impersonating Obayashi management.
               </p>
+              <div style={{ marginTop: '14px', paddingTop: '14px', borderTop: '1px solid #ffd1d5' }}>
+                <p className="security-card-text">
+                  Obayashi India Corporation operates under its respective corporate identity and organizational framework. For the avoidance of doubt: Obayashi India Corporation is not affiliated with, owned by, controlled by, represented by, or operating as a subsidiary, branch, representative office, or authorized extension of Obayashi Japan Corporation, Osaka, Japan, accessible through www.obayashi.co.jp.
+                </p>
+              </div>
             </div>
           </div>
         </div>
