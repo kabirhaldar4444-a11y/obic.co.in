@@ -382,7 +382,12 @@ export default function Contact() {
                 <Building2 size={18} className="info-icon" />
                 <div>
                   <h4>OBAYASHI CORPORATION (Japan HQ)</h4>
-                  <p>Umeda Sky Building, 1-1-88 Oyodonaka, Kita-ku, Osaka 531-0076, Japan</p>
+                  <p>
+                    11th Floor, Queen’s Tower A<br />
+                    2-3-1 Minato Mirai, Nishi-ku<br />
+                    Yokohama, Kanagawa 220-6011<br />
+                    Japan
+                  </p>
                 </div>
               </div>
 
@@ -435,7 +440,7 @@ export default function Contact() {
               </p>
               <div style={{ marginTop: '14px', paddingTop: '14px', borderTop: '1px solid #ffd1d5' }}>
                 <p className="security-card-text">
-                  Obayashi India Corporation operates under its respective corporate identity and organizational framework. For the avoidance of doubt: Obayashi India Corporation is not affiliated with, owned by, controlled by, represented by, or operating as a subsidiary, branch, representative office, or authorized extension of Obayashi Japan Corporation, Osaka, Japan, accessible through www.obayashi.co.jp.
+                  Obayashi India Corporation operates under its respective corporate identity and organizational framework. For the avoidance of doubt: Obayashi India Corporation is not affiliated with, owned by, controlled by, represented by, or operating as a subsidiary, branch, representative office, or authorized extension of Obayashi Japan Corporation, Yokohama, Japan, accessible through www.obayashi.co.jp.
                 </p>
               </div>
             </div>

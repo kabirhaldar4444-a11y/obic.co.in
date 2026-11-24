@@ -38,7 +38,7 @@ export default function Footer() {
                 <MapPin size={12} className="inline-block mr-1 text-[var(--primary-red)] align-text-bottom" />
                 Corporate HQ (Japan)
               </span>
-              <p className="footer-hq-address">Umeda Sky Building, 1-1-88 Oyodonaka, Kita-ku, Osaka 531-0076, Japan</p>
+              <p className="footer-hq-address">11th Floor, Queen’s Tower A, 2-3-1 Minato Mirai, Nishi-ku, Yokohama, Kanagawa 220-6011, Japan</p>
             </div>
             <div className="footer-hq-block">
               <span className="footer-hq-title">
